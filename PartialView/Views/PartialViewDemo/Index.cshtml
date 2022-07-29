@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index- with partial view Eexample</h2>
+@*to access partial view - two methods
+    1 - Httml.Partial()
+    2 - Httml.RenderPartial()*@
+
+with Httml.Partial()
+@Html.Partial("Login")
+
+<br />
+with Httml.RenderPartial()
+@{
+    Html.RenderPartial("Login");
+} 
+
+
